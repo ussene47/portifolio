@@ -1,0 +1,157 @@
+      <!DOCTYPE html> 
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+            <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+            <link rel="stylesheet" type="text/css" href="style/portifolio.style.css" />
+            <title>Portifólio</title>
+        </head>
+        <body>
+          
+          
+            <nav class="navbar navbar-expand-lg bg">
+                <div class="container-fluid">
+                  <a class="navbar-brand nomeIT"  href="index.html">Ussene Ussene</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <div class="d-flex" >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="index.html">Menu</a> 
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="#sobremim">Sobre <span>mim</span></a>
+                            </li>
+                          
+                            <li class="nav-item">
+                          <a class="nav-link" href="#projectos" >Projectos</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#experiencia">Experiência</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#contacto">Contacto</a>
+                            </li>
+
+                          </ul>
+                    </div>
+                  </div>   
+                </div>
+            </nav>
+
+
+        <section class="menu" id="menu">
+          <img src="img/portifolio.png" class="image" alt="Ussene Ussene-Desenvolvedor web">
+          <div class="apresentacao  hidden  show" id="apresentacao">
+              <p>Prazer, meu nome é <span>Ussene Ussene</span></p>
+              <p id="destacado"></p>
+              <p>Sou desenvolvedor de Software e trabalho com diversas tecnologia como nodejs, Javascript, Html, Css, Bootstrap e Sql.Estou cada vez mais aprimorando o meu conhecimento.</p>
+          </div>
+        </section>
+
+        <section class="sobremim hidden  show" id="sobremim">
+      
+            <h1>Sobre mim</h1>
+            <div class="detalhes">
+              <p>Sou licenciado em Tecnologia de Informação, atualmente trabalho em desenvolvimento de software desde 2021 e participei em diversos projectos profissionais.</p>
+              <p>É uma área que eu gosto e quero crescer profissionalmente,busco sempre desafios para consolidar meus conhecimentos.
+                Gosto de aprender e ensinar novas tecnologias, isso me ajuda a expandir minha experiência.
+              </p>
+              <p>Nesses ultimos dias, estou estudando e aplicando nas tecnologias como React,Firebase e AWS.</p>
+            </div>
+       
+      
+        </section>
+        
+          <section class="projectos hidden  show" id="projectos">
+            <h1>Projectos</h1>
+              <div class="projecto">
+                  <div class="proj pro1">
+                      <video src="video/hotel.mp4"></video>
+                      <p>Atrações turísticas</p>
+                      <button class="visual">Visualizar</button>
+                  </div>
+                  
+                  
+                  <div class="proj pro2">
+                      <video src="video/tempo.mp4"></video>
+                      <p>Horário Viewer</p>
+                      <button class="visual">Visualizar</button>
+                  </div>
+              </div>
+          </section>
+
+        <section class="sobremim experiencia hidden  show" id="experiencia">
+          <h1>Experiencia</h1>
+          <div class="detalhes">
+            <p><i class="fa-regular fa-clock"></i> </i>2021-2023</p>
+            <p>Freelancer</p>
+                <div  class="experiPlus">
+                      <div>
+                        <p>Desenvolvimento de software</p>
+                        <p>Correção de erros e optimização da eficiência.</p>
+                        <p>Design e Implementação de software.</p>
+                    </div>
+
+                      <div>
+                        <p>Manutenção e Atualização.</p>
+                        <p>Gerenciamento de Projetos.</p>
+                      </div>
+                    
+                </div>
+          </div>
+          </section>
+          
+          
+          <section class="contactos hidden  show" id="contacto">
+            <h1>Contacto</h1>
+            <form class="row g-3" action="https://formsubmit.co/husseindegea47@gmail.com" method="POST">
+    
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail4" required>
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nome completo</label>
+                <input type="text" name="name" class="form-control" id="inputPassword4" required>
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Telefone</label>
+                <input type="text" name="cellphone" class="form-control" id="inputAddress" required >
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Assunto</label>
+                <input type="text" name="subject" class="form-control" id="inputAddress2" required>
+              </div>
+              
+              <div class="col-12">
+                <textarea name="tarea" id="area1" name="message" class="form-control" placeholder="Escreva a mensagem" rows="4"></textarea>
+              </div>
+              <input type="hidden" name="_subject" value="Novo contacto">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/success.html">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form> 
+          </section>
+        
+            <footer>
+                    <p>&copy; Ussene Ussene</p>           
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+            <script defer src="controllers/potrtifolio.script.js"></script>
+        </body>
+        </html>

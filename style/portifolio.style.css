@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@1,100;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;1,100;1,400&family=Tilt+Prism&display=swap');
+/*Estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    color: var(--Corbranca); 
+}
+
+/*variaveis gerais*/
+:root{
+    --gradient:linear-gradient(to right,rgb(149,114,252),rgb(67,231,173),rgb(226,212,92));
+    --gradient2:linear-gradient(to right,rgb(149,114,252),rgb(67,231,173));
+    --CorPrincipal:#647688;
+    --Corbranca:#fff;
+    --CorPreta:#080808b4;
+    --fonte_size:1.1rem;
+    --botao1:rgb(149,114,252);
+    --botao2:rgb(67,231,173);
+}
+   /*--Estilização de elementos--*/
+ body{
+   background-color:var(--CorPrincipal); 
+    font-family:'sans-serif',Arial;
+    scroll-behavior: smooth;
+    overflow: hidden;  
+}
+
+
+
+ img{
+    height: 89vh;
+} 
+
+section> img.image{
+    width: 50vw;
+}
+
+footer, .bg{
+background-color: #575e64a9 !important;
+width: 100vw;
+}
+
+
+
+.d-flex > ul li a{
+    color:var(--Corbranca);
+}
+
+.nomeIT{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color:var(--Corbranca);
+    border:3px solid;
+    padding: 0 3px;
+    border-image: var(--gradient)1;
+}
+
+/*Menu principal*/
+nav.bg{
+    position:fixed;
+    z-index: 1;
+    top: 0; 
+    }
+
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4rem auto;
+}
+
+
+.apresentacao{
+    margin: 10rem auto;
+    text-align: justify;
+    max-width: 45%;
+    color: var(--Corbranca);
+    font-size:var(--fonte_size);
+    /* position: absolute; */
+}
+
+#destacado{
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/*Sobre mim e Contactos:*/
+
+.detalhes ,.contactos{
+    max-width: 49rem;
+    margin: 0px auto;
+    text-align: justify;
+    font-size: var(--fonte_size);
+    color: var(--Corbranca);
+
+}
+
+
+/*Contacto:*/
+section.contactos{
+   max-height: 35rem;
+   box-sizing: border-box;
+}
+
+
+button{
+ text-align: end;
+}
+
+div>button.btn{
+    margin-left: 50%;
+
+}
+
+.contactos h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    color: var(--Corbranca); 
+}
+
+
+/*projectos: */
+
+.projectos{
+    width: 35vw;
+    border: 2px solid;
+    border-image: var(--gradient)2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     flex-wrap: wrap; 
+     margin:auto ;  
+    
+}
+
+.projectos .projecto{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin:20px;
+}
+.proj {
+    display: flex;
+    flex-direction: column; 
+    justify-items: center;
+    border: 2px solid;
+    border-radius:5px;
+    width: 14vw;
+}
+
+.proj p{
+    text-align: center;
+    color: var(--Corbranca);
+}
+
+button.visual{
+    text-align: center;
+    color: var(--Corbranca);
+    background-image: var(--gradient2);
+}
+
+
+
+.proj.pro2{
+    margin-left: 3.5vw;
+}
+
+
+/*Footer*/
+footer{
+    margin-top: 1rem;
+    height: 5vh;
+    background-color: #575e64a9 !important;
+    }
+
+    footer>p{
+        text-align: center;
+        color: var(--Corbranca);
+    }
+
+
+
+    /*Todos scroll & margens*/
+
+    .sobremim{
+        scroll-behavior: smooth;
+        scroll-margin-top: 200px;
+        margin-bottom: 165px ;  
+    }
+
+    .projectos{
+        scroll-behavior: smooth;
+         scroll-margin-top: 200px !important; 
+         margin-bottom: 202px !important;  
+     
+    }
+
+    section.menu{
+        margin-bottom: 205px;
+    }
+
+    div.detalhes{
+        margin-bottom: 205px;
+    }
+
+    section.experiencia{
+        scroll-behavior: smooth;
+        scroll-margin-top: 200px !important; 
+    }
+
+   /*Versão mobile*/
+
+   @media (max-width:750px) {
+
+    body{
+        overflow: scroll;
+    }
+
+    section.menu{
+        display: grid;
+        grid-template-areas: 
+        "image"
+        "apresentacao";
+        grid-template-columns: 1fr;  
+        height: 90vh;
+    }
+
+    section> img.image{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .image{
+        grid-area:image;
+    }
+
+    .apresentacao{
+        grid-area: apresentacao;
+        margin: 30px;
+        width: auto;
+        max-width: 80%; 
+        border: 2px solid rgb(149,114,252,0.3);
+        border-radius: 5px;
+        box-shadow: 3px 2px 3px 1px rgba(46, 46, 48, 0.3);
+    }
+
+    .apresentacao p{
+        margin: 4px;
+    }
+ 
+    .sobremim{
+        margin:24rem 30px -10rem;
+        width: auto;
+        max-width: 80%; 
+        text-align: justify; 
+    }
+
+   
+
+    #projectos{
+       width: auto; 
+       max-width: 80%;
+    } 
+
+    .projectos .projecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .proj {
+        width: 60vw; 
+        margin: 15px; 
+    }
+
+    section.sobremim.experiencia{
+        margin:-10rem 30px auto !important;
+    }
+
+
+
+    .contactos{
+        margin: -10rem 30px 30px;
+        width: auto;
+        max-width: 80%;
+     
+    }
+
+    button.btn.btn-primary{
+       width: 18rem;
+        margin-left: 7px; 
+    }
+
+
+       /*mobile box: */
+       .hidden{
+        opacity: 0;
+        transition: all 2s;
+        transform: translateX(-100px);
+       }
+
+        .show{
+            opacity: 1;
+            transition: all 2s;
+            transform: translateX(0);
+        }
+
+   }
+
+
+   /*versao de tablet e ...*/
+
+   @media (min-width:1024px){
+    section> img.image{
+        width: 100vw;
+        height: 100vh;
+    }
+   }
+
+
+
+
+   /*success.html  style*/
+ 
+   #projectos{
+    margin-top: 135px;
+   }
+
+
+
+
+
