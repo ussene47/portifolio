@@ -3,222 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ussene Ussene · Engenheiro de software</title>
-  <meta name="description" content="Ussene Ussene, engenheiro de software em Pemba, Moçambique. Sistemas de dados, saúde e comércio digital.">
-  <meta property="og:title" content="Ussene Ussene · Engenheiro de software">
-  <meta property="og:description" content="Sistemas de dados, saúde e comércio digital feitos em Pemba, Moçambique.">
+  <title>Ussene Ussene</title>
+  <meta name="description" content="Ussene Ussene, desenvolvedor de software em Pemba, Moçambique.">
+  <meta property="og:title" content="Ussene Ussene">
+  <meta property="og:description" content="Desenvolvedor de software em Pemba, Moçambique.">
   <meta property="og:image" content="https://ussene47.github.io/portifolio/img/mobile_port.png">
-  <meta name="theme-color" content="#0B2E3A">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/portifolio.style.css">
 </head>
 <body>
-  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
-
   <header class="topo">
-    <a class="marca" href="#inicio" aria-label="Ussene Ussene, início">UU</a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" class="nav" aria-label="Principal">
-      <a href="#projectos">Projectos</a>
-      <a href="#percurso">Percurso</a>
-      <a href="#competencias">Competências</a>
-      <a href="#contacto" class="nav-cta">Contacto</a>
+    <a class="nome" href="./">Ussene Ussene</a>
+    <nav>
+      <a href="#projectos">projectos</a>
+      <a href="#experiencia">experiência</a>
+      <a href="#contacto">contacto</a>
     </nav>
   </header>
 
-  <main id="conteudo">
-    <!-- Hero -->
-    <section class="hero" id="inicio">
-      <div class="hero-texto">
-        <p class="lugar">Pemba, Cabo Delgado — Moçambique</p>
-        <h1>Ussene<br>Ussene</h1>
-        <p class="lead">Engenheiro de software. Construo sistemas de dados, saúde e comércio digital pensados para quem vive e trabalha em Moçambique.</p>
-        <div class="accoes">
-          <a class="btn btn-solido" href="#projectos">Ver projectos</a>
-          <a class="btn btn-linha" href="#contacto">Enviar mensagem</a>
-        </div>
-      </div>
-
-      <div class="hero-foto" aria-hidden="true">
-        <svg class="capulana" viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <pattern id="padrao" width="80" height="80" patternUnits="userSpaceOnUse">
-              <rect width="80" height="80" fill="var(--oceano)"/>
-              <path d="M0 0 L40 40 L0 80 Z" fill="var(--wimbe)"/>
-              <path d="M80 0 L40 40 L80 80 Z" fill="var(--wimbe)"/>
-              <path d="M40 0 L60 20 L40 40 L20 20 Z" fill="var(--sol)"/>
-              <path d="M40 40 L60 60 L40 80 L20 60 Z" fill="var(--sol)"/>
-              <circle cx="40" cy="40" r="6" fill="var(--papel)"/>
-              <circle cx="0" cy="0" r="4" fill="var(--papel)"/>
-              <circle cx="80" cy="0" r="4" fill="var(--papel)"/>
-              <circle cx="0" cy="80" r="4" fill="var(--papel)"/>
-              <circle cx="80" cy="80" r="4" fill="var(--papel)"/>
-            </pattern>
-          </defs>
-          <rect width="400" height="520" fill="url(#padrao)"/>
-        </svg>
-        <img src="img/portifolio.png" alt="" width="542" height="898">
+  <main>
+    <section class="intro">
+      <img src="img/portifolio.png" alt="Ussene Ussene" width="542" height="898">
+      <div>
+        <h1>Olá, sou o Ussene.</h1>
+        <p>Sou desenvolvedor de software e vivo em Pemba, Cabo Delgado. Trabalho mais no backend: APIs em Node.js, bases de dados e algum tratamento de dados.</p>
+        <p>Antes da informática estudei Farmácia, e depois fiz Tecnologia de Informação na UCM. Por isso acabo muitas vezes a trabalhar em coisas ligadas à saúde, e também já fiz bastante trabalho com dados em projectos humanitários aqui na província.</p>
+        <p>Neste momento estou disponível para projectos e trabalho freelance.</p>
       </div>
     </section>
 
-    <!-- Factos -->
-    <section class="factos" aria-label="Resumo">
-      <dl>
-        <div><dt>Foco</dt><dd>Backend e sistemas de dados</dd></div>
-        <div><dt>Formação</dt><dd>Tecnologia de Informação, UCM · Farmácia</dd></div>
-        <div><dt>Línguas</dt><dd>Português e inglês</dd></div>
-        <div><dt>Disponível para</dt><dd>Projectos e consultoria</dd></div>
-      </dl>
-    </section>
-
-    <!-- Sobre -->
-    <section class="sobre" id="sobre">
-      <h2>Tecnologia que resolve problemas daqui</h2>
-      <div class="sobre-colunas">
-        <p>Comecei pela Farmácia e cheguei à Tecnologia de Informação. Essa mistura define o meu trabalho: entendo como funciona um hospital, um pequeno negócio ou um programa humanitário, e construo o software que esses lugares realmente precisam.</p>
-        <p>Trabalho sobretudo no backend: APIs em Node.js, bases de dados, pipelines de dados e integrações com pagamentos móveis como M-Pesa e e-Mola. Dou atenção especial à privacidade e à protecção dos dados das pessoas.</p>
-      </div>
-    </section>
-
-    <!-- Projectos -->
-    <section class="projectos" id="projectos">
+    <section id="projectos">
       <h2>Projectos</h2>
 
-      <article class="proj">
-        <div class="proj-cab">
-          <h3>PlusEducation</h3>
-          <span class="estado estado-andamento">Em desenvolvimento</span>
-        </div>
-        <p>Plataforma para aprender inglês. Professores e centros de línguas publicam aulas em vídeo, áudio e PDF, e criam exercícios com correcção imediata. Os alunos praticam falar, ler, escrever e ouvir.</p>
-        <ul class="stack" aria-label="Tecnologias">
-          <li>Supabase</li><li>PostgreSQL</li><li>AWS</li><li>Android</li>
-        </ul>
-      </article>
+      <div class="proj">
+        <h3>PlusEducation <small>(em desenvolvimento)</small></h3>
+        <p>Uma plataforma para aprender inglês. Os professores e centros de línguas publicam aulas em vídeo, áudio e PDF e criam exercícios que são corrigidos na hora. A ideia é o aluno conseguir praticar as quatro partes: falar, ler, escrever e ouvir.</p>
+        <p class="feito-com">Supabase, PostgreSQL, AWS, Android</p>
+      </div>
 
-      <article class="proj">
-        <div class="proj-cab">
-          <h3>Sistema de registo clínico electrónico</h3>
-          <span class="estado estado-feito">Concluído</span>
-        </div>
-        <p>Backend de um prontuário electrónico (EMR) para uma clínica. Regista pacientes, consultas e histórico clínico, e funciona na rede local da clínica sem depender da internet.</p>
-        <ul class="stack" aria-label="Tecnologias">
-          <li>Node.js</li><li>Express</li><li>MySQL</li><li>Rede local</li>
-        </ul>
-      </article>
+      <div class="proj">
+        <h3>Registo clínico electrónico</h3>
+        <p>Fiz o backend de um prontuário electrónico para uma clínica: pacientes, consultas e histórico. Corre na rede local da clínica, porque a internet lá nem sempre ajuda.</p>
+        <p class="feito-com">Node.js, Express, MySQL</p>
+      </div>
 
-      <h3 class="sub">Projectos web anteriores (Template)</h3>
+      <h3 class="antigos">Sites mais antigos</h3>
+      <p>Dois sites simples que fiz quando estava a aprender HTML, CSS e JavaScript.</p>
       <div class="demos">
-        <figure class="demo">
-          <video src="video/hotel.mp4" poster="img/hotel-poster.jpg" muted loop playsinline preload="metadata" aria-label="Demonstração do site de atrações turísticas"></video>
-          <figcaption>
-            <span>Atrações turísticas</span>
-            <a href="https://ussene47.github.io/hotelEstrela/">Abrir site</a>
-          </figcaption>
+        <figure>
+          <video src="video/hotel.mp4" poster="img/hotel-poster.jpg" muted loop playsinline preload="metadata" controls></video>
+          <figcaption>Site de atrações turísticas — <a href="https://ussene47.github.io/hotelEstrela/">ver</a></figcaption>
         </figure>
-        <figure class="demo">
-          <video src="video/tempo.mp4" poster="img/tempo-poster.jpg" muted loop playsinline preload="metadata" aria-label="Demonstração do visualizador de hora"></video>
-          <figcaption>
-            <span>Visualizador de hora</span>
-            <a href="https://ussene47.github.io/visualizador-de-hora/">Abrir site</a>
-          </figcaption>
+        <figure>
+          <video src="video/tempo.mp4" poster="img/tempo-poster.jpg" muted loop playsinline preload="metadata" controls></video>
+          <figcaption>Visualizador de hora — <a href="https://ussene47.github.io/visualizador-de-hora/">ver</a></figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Percurso -->
-    <section class="percurso" id="percurso">
-      <h2>Percurso</h2>
-      <ol class="linha">
+    <section id="experiencia">
+      <h2>Experiência</h2>
+      <ul class="exp">
         <li>
-          <span class="ano">2021 — hoje</span>
-          <div>
-            <h3>Desenvolvedor de software independente</h3>
-            <p>Desenho, desenvolvimento e manutenção de sistemas para clientes: APIs, bases de dados, correcção de erros e gestão de projectos.</p>
-          </div>
+          <strong>Desenvolvedor freelance</strong> <span class="data">2021 – agora</span>
+          <p>Sistemas para clientes: APIs, bases de dados, manutenção e correcção de erros.</p>
         </li>
         <li>
-          <span class="ano">2023</span>
-          <div>
-            <h3>Oficial de distribuição · Fundação AVSI</h3>
-            <p>Programa de vouchers da UNICEF em Pemba. Registo de beneficiários e controlo da distribuição.</p>
-          </div>
+          <strong>Oficial de distribuição, Fundação AVSI</strong> <span class="data">2023</span>
+          <p>Programa de vouchers da UNICEF em Pemba. Registo de beneficiários e controlo das distribuições.</p>
         </li>
         <li>
-          <span class="ano">2020 — 2022</span>
-          <div>
-            <h3>Analista de dados · ADEL Cabo Delgado</h3>
-            <p>Recolha de dados com KOBO e ODK, limpeza de dados, dashboards, monitoria e relatórios 5W.</p>
-          </div>
+          <strong>Analista de dados, ADEL Cabo Delgado</strong> <span class="data">2020 – 2022</span>
+          <p>Recolha de dados com KOBO e ODK, limpeza, dashboards e relatórios 5W.</p>
         </li>
-      </ol>
+      </ul>
+
+      <p class="ferramentas">Ferramentas que uso no dia a dia: Node.js, Express, Python, PostgreSQL, MySQL, Supabase, Docker, Git, AWS, Power BI, KOBO/ODK. Já integrei M-Pesa e e-Mola em alguns sistemas.</p>
     </section>
 
-    <!-- Competências -->
-    <section class="competencias" id="competencias">
-      <h2>Competências</h2>
-      <div class="grupos">
-        <div>
-          <h3>Backend</h3>
-          <p>Node.js, Express, APIs REST, Python, integrações de pagamento móvel</p>
-        </div>
-        <div>
-          <h3>Dados</h3>
-          <p>PostgreSQL, MySQL, Supabase, pipelines ETL, KOBO/ODK, Power BI, Tableau</p>
-        </div>
-        <div>
-          <h3>Infraestrutura</h3>
-          <p>Docker, AWS, servidores locais sempre ligados, Git</p>
-        </div>
-        <div>
-          <h3>Privacidade</h3>
-          <p>Minimização e anonimização de dados, governação de dados, RGPD</p>
-        </div>
-      </div>
-    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>A forma mais rápida é por email: <a href="mailto:husseindegea47@gmail.com">husseindegea47@gmail.com</a>. O meu código está no <a href="https://github.com/ussene47">GitHub</a>.</p>
+      <p>Ou deixe aqui uma mensagem:</p>
 
-    <!-- Contacto -->
-    <section class="contacto" id="contacto">
-      <div class="contacto-intro">
-        <h2>Vamos trabalhar juntos</h2>
-        <p>Tem um projecto, uma vaga ou uma ideia? Escreva-me e respondo o mais rápido possível.</p>
-        <p class="links">
-          <a href="mailto:husseindegea47@gmail.com">husseindegea47@gmail.com</a>
-          <a href="https://github.com/ussene47">GitHub: ussene47</a>
-        </p>
-      </div>
-
-      <form class="form" action="https://formsubmit.co/husseindegea47@gmail.com" method="POST">
-        <label>Nome completo
+      <form action="https://formsubmit.co/husseindegea47@gmail.com" method="POST">
+        <label>Nome
           <input type="text" name="name" autocomplete="name" required>
         </label>
         <label>Email
           <input type="email" name="email" autocomplete="email" required>
         </label>
-        <label><span class="rot">Telefone <span class="opc">(opcional)</span></span>
+        <label>Telefone (se quiser)
           <input type="tel" name="telefone" autocomplete="tel">
         </label>
-        <label>Assunto
-          <input type="text" name="assunto" required>
+        <label>Mensagem
+          <textarea name="mensagem" rows="6" required></textarea>
         </label>
-        <label class="largo">Mensagem
-          <textarea name="mensagem" rows="5" required></textarea>
-        </label>
-        <input type="hidden" name="_subject" value="Novo contacto pelo portfólio">
+        <input type="hidden" name="_subject" value="Mensagem pelo portfólio">
         <input type="hidden" name="_next" value="https://ussene47.github.io/portifolio/success.html">
         <input type="hidden" name="_template" value="box">
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" class="mel" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button type="submit" class="btn btn-solido largo">Enviar mensagem</button>
+        <input type="text" name="_honey" class="mel" tabindex="-1" autocomplete="off">
+        <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
-  <footer class="rodape">
-    <p>© <span id="ano">2026</span> Ussene Ussene · Pemba, Moçambique</p>
+  <footer>
+    <p>Ussene Ussene, Pemba</p>
   </footer>
-
-  <script src="controllers/potrtifolio.script.js" defer></script>
 </body>
 </html>
